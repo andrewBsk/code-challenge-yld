@@ -1,0 +1,26 @@
+{
+  "name": "code-challenge",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**/*.js",
+    "coverage": "nyc --reporter=html --reporter=text npm test"
+  },
+  "author": "Andreas Basekis",
+  "license": "",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "mocha": "6.2.0",
+    "nyc": "14.1.1"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "src/**/*.js"
+    ]
+  },
+  "dependencies": {
+    "prettier": "^2.6.2"
+  }
+}
